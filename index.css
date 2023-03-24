@@ -44,31 +44,18 @@ form {
   color: white;
   padding: 2.5rem;
 }
+
+.section .checkbox_inputs,
+.section .text_area,
+.section .radio_inputs,
+.section .dropdown_inputs,
 .section .text_inputs {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 10px;
 }
-.section .dropdown_inputs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.section .radio_inputs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.section .checkbox_inputs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.section .text_area {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
