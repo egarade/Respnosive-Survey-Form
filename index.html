@@ -20,13 +20,12 @@
         <form id="survey-form">
             <!-- text based input types -->
             <div class="text_inputs">
-                <label id="name-label">Name</label>
-                <input title="name-label" type="text" id="name" class="full_width" required
-                    placeholder="Enter your name">
-                <label id="email-label">Email</label>
-                <input type="email" id="email" class="full_width" required placeholder="Enter your Email">
-                <label id="number-label">Age</label>
-                <input type="number" id="number" class="full_width" min="10" max="99" required placeholder="Age">
+                <label for="name" id="name-label">Name</label>
+                <input title="name-label" type="text" name="name" id="name" required placeholder="Enter your name">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your Email">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" name="number" min="10" max="99" required placeholder="Age">
             </div>
             <!-- Drop down input type -->
             <div class="dropdown_inputs">
@@ -42,9 +41,9 @@
             </div>
             <!-- Radio input type -->
             <div class="radio_inputs">
-                <label><input type="radio"> Definitely</label>
-                <label><input type="radio"> Maybe</label>
-                <label><input type="radio"> Not Sure</label>
+                <label><input name="user-recommended" value="definitely" type="radio"> Definitely</label>
+                <label><input name="user-recommended" value="maybe" type="radio"> Maybe</label>
+                <label><input name="user-recommended" value="notSure" type="radio"> Not Sure</label>
             </div>
             <!-- Dropdown menu type -->
             <div class="dropdown_inputs" name="role" class="form-control" required>
